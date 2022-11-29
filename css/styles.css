@@ -1,22 +1,26 @@
 :root {
   --primary-text-color: #434455;
-  --title-text-color: #2E2F42;
-  --logo-text-color: #4D5AE5;
-  --primary-bg-color: #FFFFFF;
-  --accent-color: #FFFFFF;
-  --button-bg-color: #4D5AE5;
+  --title-text-color: #2e2f42;
+  --logo-text-color: #4d5ae5;
+  --primary-bg-color: #ffffff;
+  --accent-color: #ffffff;
+  --button-bg-color: #f4f4fd;
+  --pr-button-text-color: #ffffff;
+  --pr-button-bg-color: #4d5ae5;
+  --sc-button-text-color: #4d5ae5;
+  --sc-button-bg-color: #f4f4fd;
+  --button-active: #404BBF;
   --accent-bg-color: #2E2F42;
 }
 
 
-
-ul,
-ol {
-list-style: none;
+.list {
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 
@@ -29,14 +33,11 @@ body {
   letter-spacing: 0.02em;
   
   font-size: 16px;
-  line-height: 1.5;
 
 }
 
 .logo {
-  width: 71px;
-  height: 24px;
-  
+
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -59,35 +60,43 @@ body {
 .page-nav .link {
 
   color:var(--title-text-color) ;
-  font-weight: 600;
-  text-decoration: none;
-}
+  font-weight: 500;
 
-.page-nav .link:active {
-  color: var(--logo-text-color) ;
 }
 
 .page-nav .link:hover,
+
+  color: var(--logo-text-color);
+}
+
 .page-nav .link:focus {
   color: var(--primary-text-color);
 }
 
-.page-nav .link.current {
+
+.page-contact-email,
+.page-contact-phone-number {
+  color: var(--primary-text-color);
+}
+
+.page-contact:hover,
+.page-contact:focus {
+  color: var(--primary-text-color);
+}
+
+.page-contact:active {
+  color: var(--primary-text-color);
 }
 
 /*Hero*/
 .hero {
-  
-  width: 1440px;
-  height: 603px;
-  
   background-color: var(--accent-bg-color);
 }
 
 .hero-title {
 
   color: var(--accent-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
@@ -95,19 +104,14 @@ body {
 
 
 /*Button*/
-.button {
+.order-button {
 
   font-family: inherit;
 
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent-color);
-  background-color: var(--button-bg-color);
+  background-color: var(--pr-button-bg-color);
   
-  width: 170px;
-  position: absolute;
-  height: 51px;
-  left: 635px;
-  top: 432px;
 
   font-size: 16px;
   line-height: 1.2;
@@ -117,9 +121,13 @@ body {
 
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero .order-button:hover,
+.hero .order-button:focus {
   color: var(--button-bg-color);
+}
+
+.hero .order-button:active {
+  color: var(--pr-button-text-color);
 }
 
 
@@ -127,7 +135,7 @@ body {
 
 .features .title {
   color:var(--title-text-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -137,6 +145,7 @@ body {
 /*Examples*/
 
 /*Team*/
+
 
 
 .section-title {
@@ -151,6 +160,11 @@ body {
   text-transform: capitalize;
 }
 
+.section-work,
+.member {
+  background-color: #F4F4FD;
+}
+
 
 .name {
  
@@ -160,11 +174,61 @@ body {
 
 }
 
-.position {
+
+/*Filters*/
+
+.filters {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/*Button*/
+
+.button {
+  color: var(--pr-button-text-color);
+  background-color: var(--button-bg-color);
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.button.primary {
+  color: var(--pr-button-text-color);
+  background-color: var(--pr-button-bg-color);
+}
+
+.button.secondary {
+  color: var(--sc-button-text-color);
+  background-color: var(--sc-button-bg-color);
+}
+/*Works*/
+
+.work-list  {
+  text-decoration: none;
   font-weight: 400;
+  font-size: 16px;
+
 }
 
 
+.title {
+
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--accent-bg-color);
+}
+
+.text {
+  font-weight: 400;
+  color: var(--accent-bg-color);
+}
 /*Footer*/
 
 .footer {
@@ -178,10 +242,6 @@ body {
 }
 
 .footer-text {
-  width: 264px;
-  height: 72px;
-  left: 156px;
-  top: 2421px;
 
   font-weight: 400;
   font-size: 16px;
