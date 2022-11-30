@@ -23,6 +23,15 @@
   color: var(--primary-text-color);
 }
 
+.link:hover,
+.link:focus {
+  color: var(--logo-text-color);
+}
+
+
+.link:active {
+  color: var(--primary-text-color);
+}
 
 body {
 
@@ -64,28 +73,14 @@ body {
 
 }
 
-.page-nav .link:hover,
-
-  color: var(--logo-text-color);
-}
-
-.page-nav .link:focus {
+.page-nav:hover,
+.page-nav:focus {
   color: var(--primary-text-color);
 }
 
 
-.page-contact-email,
-.page-contact-phone-number {
-  color: var(--primary-text-color);
-}
-
-.page-contact:hover,
-.page-contact:focus {
-  color: var(--primary-text-color);
-}
-
-.page-contact:active {
-  color: var(--primary-text-color);
+.page-nav:active{
+  color: var(--sc-button-text-color);
 }
 
 /*Hero*/
@@ -118,16 +113,18 @@ body {
 
   align-items: center;
   letter-spacing: 0.04em;
-
+  cursor: pointer;
 }
 
 .hero .order-button:hover,
 .hero .order-button:focus {
   color: var(--button-bg-color);
+  background-color: var(--pr-button-bg-color);
 }
 
 .hero .order-button:active {
   color: var(--pr-button-text-color);
+  background-color: var(--button-active);
 }
 
 
@@ -216,6 +213,27 @@ body {
   color: var(--sc-button-text-color);
   background-color: var(--sc-button-bg-color);
 }
+
+
+
+.button.primary:hover,
+.button.primary:focus,
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--accent-color);
+  background-color: var(--pr-button-bg-color);
+
+}
+
+
+.button.primary:active,
+.button.secondary:active {
+  color: #ffffff;
+  background-color: var(--button-active);
+}
+
+
+
 /*Works*/
 
 .work-list  {
