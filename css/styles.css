@@ -14,6 +14,34 @@
 }
 
 
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2,h3,h4,h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
 }
@@ -34,7 +62,7 @@
 }
 
 body {
-
+  width: 1440px;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   
@@ -44,6 +72,65 @@ body {
   font-size: 16px;
 
 }
+
+/*Header*/
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+}
+
+.page-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.page-contact-email {
+  margin-right: 40px;
+}
+
+.logo {
+  margin-right: 77px;
+}
+
+.page-item:not(:last-child) {
+  margin-right: 40px;
+
+}
+
 
 .logo {
 
@@ -84,8 +171,12 @@ body {
 }
 
 /*Hero*/
+
+
 .hero {
-  background-color: var(--accent-bg-color);
+  background-color: var(--accent-bg-color) ;
+  padding-top: 192px;
+  padding-bottom: 192px;
 }
 
 .hero-title {
@@ -100,6 +191,13 @@ body {
 
 /*Button*/
 .order-button {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+
+
+  padding: 16px 32px;
 
   font-family: inherit;
 
@@ -130,6 +228,12 @@ body {
 
 /*Advantages*/
 
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .features .title {
   color:var(--title-text-color);
   font-weight: 700;
@@ -137,38 +241,14 @@ body {
   line-height: 1.2;
 }
 
-
-
-/*Examples*/
-
-/*Team*/
-
-
-
-.section-title {
-  
-  color: var(--title-text-color);
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.11;
-
-
-  text-align: center;
-  text-transform: capitalize;
+.features-item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.section-work,
-.member {
-  background-color: #F4F4FD;
-}
-
-
-.name {
- 
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-
+.title {
+  margin-bottom: 8px;
 }
 
 
@@ -200,8 +280,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-
-  cursor: pointer;
 }
 
 .button.primary {
@@ -241,6 +319,9 @@ body {
   font-weight: 400;
   font-size: 16px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -258,13 +339,56 @@ body {
   font-weight: 400;
   color: var(--accent-bg-color);
 }
+
+
+/*Team*/
+
+
+
+.section-title {
+  
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section-work {
+  background-color: #F4F4FD;
+}
+
+.member-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name, 
+.position {
+  align-items: center;
+}
+
+
+.name {
+ 
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+}
+
+
+
+
 /*Footer*/
 
 .footer {
-  width: 1440px;
-  height: 310px;
-  left: 0px;
-  top: 1764px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   
   background-color: var(--title-text-color);
 
@@ -279,6 +403,10 @@ body {
   letter-spacing: 0.02em;
 
   color: #e7e9fc;
+}
+
+.logo-footer {
+  padding-bottom: 16px;
 }
 
 .logo-studio {
