@@ -23,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2,h3,h4,h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -226,12 +226,11 @@ body {
 }
 
 
-/*Advantages*/
+/*Features*/
 
 .features-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
 
 .features .title {
@@ -244,19 +243,38 @@ body {
 .features-item .title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.item:not(:last-child) {
+  margin-right: 24px ;
 }
 
 .title {
   margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--accent-bg-color);
 }
 
+.text {
+  font-weight: 400;
+  color: var(--accent-bg-color);
+}
 
 /*Filters*/
 
 .filters {
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .visually-hidden { 
@@ -325,20 +343,6 @@ body {
 }
 
 
-.title {
-
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-
-  color: var(--accent-bg-color);
-}
-
-.text {
-  font-weight: 400;
-  color: var(--accent-bg-color);
-}
 
 
 /*Team*/
@@ -355,6 +359,8 @@ body {
 
   text-align: center;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
 .section-work {
@@ -363,22 +369,19 @@ body {
 
 .member-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
-
-.name, 
-.position {
-  align-items: center;
-}
-
 
 .name {
- 
+  padding-top: 32px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  text-align: center;
+}
 
+.position {
+  text-align: center;
 }
 
 
@@ -395,12 +398,17 @@ body {
 }
 
 .footer-text {
+  width: 264px;
+  height: 72px;
+  left: 156px;
+  top: 2421px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
+  padding-top: 16px;
 
   color: #e7e9fc;
 }
