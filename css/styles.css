@@ -62,7 +62,7 @@ button {
 }
 
 body {
-  width: 1440px;
+
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   
@@ -235,34 +235,31 @@ section {
 
 .features-container {
   display: flex;
+  padding: 0;
 }
 
-.features .title {
+.features-item .title {
   color:var(--title-text-color);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-
-.item:not(:last-child) {
-  margin-right: 24px ;
-}
-
-.title {
-  margin-bottom: 8px;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
-  color: var(--accent-bg-color);
+  margin-bottom: 8px;
+
+}
+
+
+.item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .text {
   font-weight: 400;
   color: var(--accent-bg-color);
   line-height: 1.5;
+
+
 
 }
 
