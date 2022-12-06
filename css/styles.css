@@ -109,8 +109,6 @@ section {
 }
 
 .page {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   align-items: center;
 }
@@ -127,6 +125,11 @@ section {
 
 .logo {
   margin-right: 77px;
+}
+
+.page-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .page-item:not(:last-child) {
@@ -233,9 +236,10 @@ section {
 
 /*Features*/
 
+
+
 .features-container {
   display: flex;
-  padding: 0;
 }
 
 .features-item .title {
@@ -247,6 +251,8 @@ section {
 
   margin-bottom: 8px;
 
+  width: 264px;
+  
 }
 
 
@@ -265,11 +271,15 @@ section {
 
 /*Filters*/
 
+.filters-section {
+  padding-top: 96px;
+  padding-bottom: 72px;
+
+}
+
 .filters {
   font-weight: 700;
   letter-spacing: 0.04em;
-  padding-top: 96px;
-  padding-bottom: 72px;
 
 }
 
@@ -346,6 +356,10 @@ section {
 
 
 /*Works*/
+.work {
+  padding: 0;
+}
+
 
 .work-list  {
   text-decoration: none;
@@ -360,22 +374,31 @@ section {
 
 /*Work set*/
 
+.work {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .work-set {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 
+  letter-spacing: 0.02em;
+
 }
 
 .set-item {
   flex-basis: calc((100% - 48px) / 3);
+
 }
 
 
 
 .item-wrap {
   border: 0.5px solid #F4F4FD;
-  padding: 32px 16px;
+  padding: 16px 32px;
   
   display: flex;
   flex-direction: column;
@@ -383,6 +406,10 @@ section {
   align-items: flex-start;
 }
 
+.link-work:hover,
+.link-work:focus {
+  color: var(--accent-bg-color);
+}
 
 /*Team*/
 
@@ -413,7 +440,7 @@ section {
 }
 
 .member {
-  padding: 16px 32px;
+  padding: 32px 16px;
   background-color: var(--primary-bg-color);
 }
 
