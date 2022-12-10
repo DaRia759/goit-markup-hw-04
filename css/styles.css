@@ -130,9 +130,10 @@ section {
 .page-item {
   padding-top: 24px;
   padding-bottom: 24px;
+  display: block;
 }
 
-.page-item:not(:last-child) {
+.page-items:not(:last-child) {
   margin-right: 40px;
 
 }
@@ -480,7 +481,7 @@ section {
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-  padding-top: 16px;
+  margin-top: 16px;
 
   color: #e7e9fc;
 }
