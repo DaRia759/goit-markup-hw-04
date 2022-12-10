@@ -477,10 +477,68 @@ section {
 
 .position {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+}
+}
+ 
+
+.social-list-item {
+  
+}
+
+
+.social-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background-color: #4D5AE5;
+
+}
+
+
+.social-link: {
+
 }
 
 
 
+/*Customers*/
+
+.customer-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+}
+
+.customer-list-item {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+
+}
+
+.customer-item {
+  width: 41px;
+  height: 46.97px;  
+}
 
 /*Footer*/
 
@@ -514,3 +572,6 @@ section {
 .logo-studio {
   color: #f4f4fd;
 }
+
+
+
