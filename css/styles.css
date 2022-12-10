@@ -181,8 +181,10 @@ section {
 
 .hero {
   background-color: var(--accent-bg-color) ;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people_office.jpg');
   padding-top: 192px;
   padding-bottom: 192px;
+  background-size: cover;
 }
 
 .hero-title {
