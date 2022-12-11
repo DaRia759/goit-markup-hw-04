@@ -521,24 +521,30 @@ section {
 .customer-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 
 }
 
 .customer-list-item {
-  display: block;
-  justify-content: center;
-  align-items: center;
-
   width: 168px;
   height: 88px;
+  
+  border: 1px solid #000000;
+  padding: 16px 32px;
 
 }
 
 .customer-item {
-  width: 41px;
-  height: 46.97px;  
+  
+  width: 104px;
+  height: 56px;
+
 }
+
+
+
+
 
 /*Footer*/
 
