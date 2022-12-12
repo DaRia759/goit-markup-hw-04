@@ -201,7 +201,9 @@ section {
   color: var(--accent-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.1;max-width: 1440px; margin: 0 auto; 
+  line-height: 1.1;
+  max-width: 1440px; 
+  margin: 0 auto; 
   text-align: center;
 }
 
@@ -239,6 +241,7 @@ section {
 .hero .order-button:focus {
   color: var(--button-bg-color);
   background-color: var(--pr-button-bg-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .hero .order-button:active {
@@ -269,16 +272,30 @@ section {
   
 }
 
+.item-icon {
+  width: 264px;
+  height: 112px;
+  background: #F4F4FD;
+
+  padding: 24px 100px;
+
+  margin-bottom: 8px;
+}
+
 
 .item:not(:last-child) {
   margin-right: 24px;
 }
 
+.features-item {
+  width: 264px;
+  height: 224px;
+  
+}
 
 
 .icon {
-  width: 264px;
-  height: 112px;
+
   background-color: #F4F4FD;
   border-radius: 4px;
 }
@@ -352,6 +369,7 @@ section {
 .button.primary {
   color: var(--pr-button-text-color);
   background-color: var(--pr-button-bg-color);
+  
 }
 
 .button.secondary {
@@ -367,6 +385,7 @@ section {
 .button.secondary:focus {
   color: var(--accent-color);
   background-color: var(--pr-button-bg-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -411,24 +430,34 @@ section {
 
   letter-spacing: 0.02em;
 
+  padding-bottom: 120px;
+
 }
 
 .set-item {
   flex-basis: calc((100% - 48px) / 3);
+  
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
+}
+
+
+
+.set-item:hover,
+.set-item:focus {
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
 
 .item-wrap {
-  border: 0.5px solid #F4F4FD;
-  padding: 16px 32px;
+
+  margin: 32px 0;
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding: 0 16px 0 16px;
 }
+
 
 .link-work:hover,
 .link-work:focus {
@@ -461,6 +490,11 @@ section {
 .member-list {
   display: flex;
   
+}
+
+.member-list-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .member {
