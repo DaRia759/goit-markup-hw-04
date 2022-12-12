@@ -312,11 +312,6 @@ section {
 
 /*Filters*/
 
-.filters-section {
-  padding-top: 96px;
-  padding-bottom: 72px;
-
-}
 
 .filters {
   font-weight: 700;
@@ -430,7 +425,6 @@ section {
 
   letter-spacing: 0.02em;
 
-  padding-bottom: 120px;
 
 }
 
