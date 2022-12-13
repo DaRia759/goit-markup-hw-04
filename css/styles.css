@@ -280,7 +280,7 @@ section {
 
   width: 264px;
 
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,6 +473,7 @@ section {
 
 .member-list {
   display: flex;
+  gap: 24px;
   
 }
 
